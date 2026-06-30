@@ -11,7 +11,7 @@ body {
     font-family: sans-serif;
 }
 
-/* Style your text elements to be white */
+/* Style your text elements to be standard grey */
 h1, h2, h3, p, span {
-    color: #ffffff; /* Pure white text */
+    color: #333333; /* standard grey */
 }
