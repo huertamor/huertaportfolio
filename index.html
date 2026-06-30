@@ -3,13 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>huertaportfolio</title>
+    <meta name="description" content="Robert Huerta - Professional Full-Stack Developer Portfolio. Showcasing software engineering projects, technical skills, and experience.">
+    <title>Robert Huerta | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
-    <h1>Robert Huerta!</h1>
+    <!-- Header / Navbar -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">R</span>Huerta
+            </a>
+            
+            <button id="mobile-menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav id="nav-links" class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="btn btn-sm btn-outline">Hire Me</a>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <span class="hero-tag">Available for Opportunities</span>
+                    <h1 class="hero-title">
+                        Building the Future <br>
+                        With <span class="gradient-text">Clean Code</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Hi, I'm <strong class="highlight-name">Robert Huerta</strong>, a Frontend &amp; Full-Stack Developer specializing in crafting high-performance web applications with exceptional user experiences.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                            <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about" aria-label="Scroll to About Section">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About & Skills Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Overview</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info reveal">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I am a software engineer driven by the challenge of designing and implementing high-quality web software. I love writing clean, maintainable code, optimizing application speed, and designing intuitive interfaces that user enjoy.
+                        </p>
+                        <p>
+                            With experience across both frontend design and backend system logic, I bridge the gap between aesthetics and functionality. Whether developing responsive web platforms or scripting automation tools, I focus on performance, scalability, and accessibility.
+                        </p>
+                        <div class="social-links-row">
+                            <a href="https://github.com/huertamor" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="#contact" class="social-link" aria-label="Email">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-wrapper reveal">
+                        <h3>Core Tech Stack</h3>
+                        <div class="skills-categories">
+                            <div class="skills-category">
+                                <h4>Frontend</h4>
+                                <div class="skills-list">
+                                    <span class="skill-badge">HTML5</span>
+                                    <span class="skill-badge">CSS3 / SASS</span>
+                                    <span class="skill-badge">JavaScript (ES6+)</span>
+                                    <span class="skill-badge">TypeScript</span>
+                                    <span class="skill-badge">React</span>
+                                    <span class="skill-badge">Responsive Design</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills-category">
+                                <h4>Backend &amp; Tools</h4>
+                                <div class="skills-list">
+                                    <span class="skill-badge">Node.js</span>
+                                    <span class="skill-badge">Express</span>
+                                    <span class="skill-badge">Git &amp; GitHub</span>
+                                    <span class="skill-badge">Python</span>
+                                    <span class="skill-badge">Bash Scripting</span>
+                                    <span class="skill-badge">REST APIs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="project-icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            </div>
+                            <a href="https://github.com/huertamor/stillfree" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>StillFree</h3>
+                            <p>A minimalist developer productivity utility designed to limit distracting sites and maintain deep focus work environments.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">Chrome Extensions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="project-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line></svg>
+                            </div>
+                            <a href="https://github.com/huertamor/CS" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>CS Foundations</h3>
+                            <p>An interactive repository compiling fundamental algorithms, data structures, and computer science concepts with explanations.</p>
+                            <div class="project-tags">
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">Data Structures</span>
+                                <span class="tag">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="project-icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <a href="https://github.com/huertamor/huertaaur" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>HuertaAur</h3>
+                            <p>An automated packaging tool and assistant for Arch Linux AUR package generation, management, and testing workflows.</p>
+                            <div class="project-tags">
+                                <span class="tag">Linux</span>
+                                <span class="tag">Bash</span>
+                                <span class="tag">DevOps</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="project-icon"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            </div>
+                            <span class="project-link-placeholder">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3>AI Image Detector</h3>
+                            <p>A smart machine learning application utilizing computer vision models to detect AI-generated artifacts in digital graphics.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Collaboration</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h3>Let's build something together</h3>
+                        <p>
+                            Whether you want to discuss a potential project, have a question about my work, or just want to connect, feel free to drop a message. I'm usually responsive!
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">Email Me</span>
+                                    <a href="mailto:huertamor@gmail.com" class="contact-value">huertamor@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">United States</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper reveal">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" " class="form-control">
+                                <label for="name" class="form-label">Your Name</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" " class="form-control">
+                                <label for="email" class="form-label">Email Address</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder=" " rows="5" class="form-control"></textarea>
+                                <label for="message" class="form-label">Your Message</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Send Message
+                                <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Robert Huerta. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive script -->
+    <script src="app.js"></script>
 </body>
 </html>
