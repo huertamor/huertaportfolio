@@ -1,0 +1,17 @@
+/* Apply styles to the entire page */
+body {
+    background-color: #f8f9fa; /* A soft, modern off-white */
+    margin: 0;                 /* Removes default browser spacing */
+    padding: 0;
+
+    /* Center all text inside the body */
+    text-align: center;
+
+    /* Optional: Sets a clean, modern font */
+    font-family: sans-serif;
+}
+
+/* Style your text elements to be white */
+h1, h2, h3, p, span {
+    color: #ffffff; /* Pure white text */
+}
