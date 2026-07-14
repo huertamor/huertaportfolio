@@ -5,29 +5,29 @@
     --bg-primary: #0a0d14;
     --bg-secondary: #111520;
     --bg-tertiary: #191f30;
-    
+
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
     --text-muted: #64748b;
-    
+
     --accent-purple: #8b5cf6;
     --accent-blue: #3b82f6;
     --accent-cyan: #06b6d4;
     --accent-glow: rgba(139, 92, 246, 0.15);
-    
+
     --gradient-primary: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
     --gradient-glow: linear-gradient(135deg, rgba(139, 92, 246, 0.4), rgba(59, 130, 246, 0.4));
-    
+
     --border-color: rgba(255, 255, 255, 0.06);
     --border-hover: rgba(139, 92, 246, 0.3);
-    
+
     --glass-bg: rgba(10, 13, 20, 0.8);
     --glass-blur: blur(12px);
-    
+
     --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     --container-max-width: 1140px;
     --header-height: 80px;
 }
@@ -747,7 +747,7 @@ textarea ~ .form-label {
         grid-template-columns: 1fr;
         gap: 48px;
     }
-    
+
     .hero-title {
         font-size: 2.75rem;
     }
@@ -757,11 +757,11 @@ textarea ~ .form-label {
     :root {
         --header-height: 70px;
     }
-    
+
     .menu-toggle {
         display: flex;
     }
-    
+
     .nav-links {
         position: fixed;
         top: var(--header-height);
@@ -777,46 +777,58 @@ textarea ~ .form-label {
         z-index: 99;
         border-top: 1px solid var(--border-color);
     }
-    
+
     .nav-links.active {
         left: 0;
     }
-    
+
     /* Transform menu toggle to X */
     .menu-toggle.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    
+
     .menu-toggle.active .bar:nth-child(2) {
         opacity: 0;
     }
-    
+
     .menu-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    
+
     .hero-title {
         font-size: 2.25rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.05rem;
     }
-    
+
     .hero-actions {
         flex-direction: column;
         gap: 12px;
     }
-    
+
     .btn {
         width: 100%;
     }
-    
+
     .section {
         padding: 60px 0;
     }
-    
+
     .contact-form {
         padding: 24px;
     }
+}
+model-viewer {
+    width: 100%;
+    height: 500px; /* Adjust based on your design */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    --poster-color: transparent;
+}
+
+.model-container {
+    padding: 2rem 5%;
+    text-align: center;
 }
